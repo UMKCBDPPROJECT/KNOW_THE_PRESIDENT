@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
+import {ApiService} from '../api.service';
 
 @Component({
   selector: 'app-bar-graph-nnp',
@@ -9,7 +12,14 @@ export class BarGraphNNPComponent implements OnInit {
   title = 'Detailed View';
   // tslint:disable-next-line:ban-types
   dataSource: Object;
-  constructor() {
+  // private x: Observable<Object>;
+  constructor(private http: HttpClient, private api: ApiService) {
+    // tslint:disable-next-line:prefer-const
+    this.api.getapi().subscribe((data) =>{
+      console.warn('Get appi data', data);
+      // console.log(data['data']['No_One']);
+    });
+    // console.log(x);
     // STEP 2 - Chart Data
     const chartData = [
       {

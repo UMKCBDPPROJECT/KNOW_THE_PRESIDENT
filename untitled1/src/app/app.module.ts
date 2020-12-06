@@ -50,6 +50,7 @@ import {MatTableModule} from '@angular/material/table';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
+import {HttpClientModule} from '@angular/common/http';
 
 import { FusionChartsModule } from 'angular-fusioncharts';
 
@@ -61,7 +62,7 @@ import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 // Pass the fusioncharts library and chart modules
 FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
 
-import {HttpClientModule} from '@angular/common/http';
+// import {HttpClientModule} from '@angular/common/http';
 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
@@ -162,6 +163,7 @@ const appRoutes: Routes = [
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+}
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
