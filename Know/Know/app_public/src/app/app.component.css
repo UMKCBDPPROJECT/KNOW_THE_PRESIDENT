@@ -1,0 +1,114 @@
+.mat-tab-group {
+  margin-bottom: 48px;
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 50%;
+}
+
+.example-full-width:nth-last-child() {
+  margin-bottom: 10px;
+}
+.white-color
+{
+  background-color: white !important;
+}
+.body-margin
+{
+  margin-top: -50px !important;
+}
+.type-width
+{
+  width: 63%;
+  margin-left: 14.25%;
+  margin-top: 10px;
+}
+.button-row {
+  margin: 10px 0;
+}
+.chatbot{
+  width: 600px;
+  margin-left : 34%;
+  margin-top: 50px;
+  height: 700px;
+  padding: 20px;
+  overflow: scroll;
+  align-self: center;
+  background-color: #dbdad8;
+  overflow: auto;
+  border-radius: 10px;
+}
+.border-radius
+{
+  border-radius: 10px;
+}
+.wheat
+{
+  background-color: #f5f5f587 !important;
+}
+.message.to {
+  background-color: #5bc0de !important;
+  color: black;
+  margin-left: 100px;
+  text-align: right;
+}
+.message.from {
+  background-color: coral !important;
+  color: #fff;
+  margin-right: 100px;
+
+}
+.button {
+  background-color:  darkred;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.text{
+  height: 50px;
+}
+.userName{
+  color: palevioletred;
+  display: block;
+}
+.userMessage{
+  color: black;
+  display: block;
+}
+.message {
+  border-radius: 50px;
+  margin: 0 15px 20px;
+  padding: 10px 20px;
+  position: relative;
+  font-size: 20px;
+}
+
+
+
+.message.from[_ngcontent-c1] {
+  background-color: coral !important;
+  color: #fff;
+  margin-right: 100px;
+}
+.message.to[_ngcontent-c1] {
+  background-color: #5bc0de !important;
+  color: black;
+  margin-left: 100px;
+  text-align: right;
+}
+table {
+  width: 100%;
+}
+mat-cell{
+  color: black;
+}
