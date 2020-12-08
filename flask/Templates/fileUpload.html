@@ -111,51 +111,101 @@ FusionCharts.ready(function() {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url('../static/health1.jpg');
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-  background-size: cover;
 }
 .popy
 {
 color:white;
 }
+div{
+  overflow:hidden;
+  height:350px;
+  padding:0;
+  margin:0;
+}
+h1{
+text-align: center;
+}
+figure{
+  width: 350px;
+  display:table;
+  height: 350px;
+  animation:imageSlide 10s infinite;
+  position:relative;
+  padding:0;
+  margin:0;
+}
 
+img{
+  width:350px;
+  height: 350px;
+  display:block;
+  padding:0;
+  margin:0;
+}
+
+@keyframes imageSlide {
+	0% {
+		top:0%
+	}
+	25% {
+		top:0%
+	}
+	50% {
+		top:-100%
+	}
+	75% {
+		top:-100%
+	}
+	100% {
+		top:0%
+	}
+}
+.slider-main{
+width: 25%;
+margin-top: 100px;
+float:left;
+}
+.slider2{
+margin-top: 110px;
+width: 25%;
+}
+.upload-form{
+width: 50%;
+height: 660px;
+float: left;
+margin-top: -30px;
+}
+#chart-container{
+height: 100%;
+}
 
 	</style>
 </head>
 
 <body class="container"  onload="Update_graph()">
-
-<div class="upload-form" id="uploader">
-	<!--<div class="popy">-->
-	<h1>WHY FEAR WHEN NIKHITHA KOLLURI IS HERE</h1>
-	<!--</div>>-->
-	<!-- Select & Upload Button -->
-<!--	<div>-->
-<!--		<form action="" method="post" enctype="multipart/form-data">-->
-<!--        <div><input type="file" name="file" onchange="loadFile(event)"></div>-->
-<!--			<div class="img-dec"><p><img id="output"  width="400" /></p></div>-->
-<!--			<br>-->
-<!--			<div class="top-pad">-->
-<!--				<input type="submit" value="Upload" class="top-pad">-->
-<!--			</div>-->
-
-			<!--<div class="popy">-->
-	<div id="chart-container"></div>
-				{{Total}} {{Trump_Negative}} {{Trump_Neutral}} {{Trump_Positive}} {{Biden_Negative}} {{Biden_Neutral}}
-                              {{ Biden_Positive }}<!--</div>-->
-
+	<h1>US ELECTION ANALYSIS USING SOCIAL MEDIA</h1>
+	<div class="slider-main">
+		<div class="slider">
+			<figure>
+			  <img src="../static/final_biden_1.png"/>
+				<img src="../static/flag.jpg"/>
+			</figure>
+		</div>
 	</div>
+	<div class="upload-form" id="uploader">
+		<!--<div class="popy">-->
+		<div id="chart-container"></div>
+<!--					{{Total}} {{Trump_Negative}} {{Trump_Neutral}} {{Trump_Positive}} {{Biden_Negative}} {{Biden_Neutral}}-->
+<!--								  {{ Biden_Positive }}&lt;!&ndash;</div>&ndash;&gt;-->
+		</div>
+	</div>
+	<div class="slider2">
+			<figure>
+				<img src="../static/flag.jpg"/>
+			  <img src="../static/final_trump_1.png"/>
 
-	<!-- File List -->
-	<div id="filelist" class="cb"></div>
 
-	<!-- Progress Bar -->
-	<div id="progressbar"></div>
-</div>
-<div class="accuracy">MODEL ACCURACY 84%</div>
-
+			</figure>
+		</div>
 </body>
-
 </html>
